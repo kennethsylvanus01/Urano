@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+.Layout__Constraint {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+nav {
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+.Hero__Section {
+  /* border: 1px solid red; */
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.Hero__Box {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.Hero__Text p {
+  margin: 1em 0;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Hero__Box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.btn__parent {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.btn__parent button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+/* .btn__parent button:nth-child(2) {
+  margin-left: 1em;
+} */
+
+.About__Container {
+  display: flex;
+  align-items: center;
+  padding: 2em 0;
+  gap: 1em;
+}
+
+.About__Box h1,
+.Factor__Text h1 {
+  font-size: clamp(1.3rem, 1vh, 20px);
+}
+
+.About__Box p,
+.Factor__Text p {
+  font-size: 13px;
+  margin: 0.8em 0;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Service__Container {
+  background-color: black;
+  padding: 2em 0;
+  color: white;
+}
+
+.Service__Container h1 {
+  font-size: 20px;
+}
+
+.Service__Container p {
+  font-size: 13px;
+  margin: 1em 0;
+  max-width: 50%;
+}
+
+.Service__Container button {
+  padding: 10px 30px;
+}
+
+.Factor__Container {
+  margin: 2em 0;
+}
+
+.Factor__Flex {
+  display: flex;
+  width: 100%;
+  gap: 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.Factor__Image {
+  width: 300px;
+  height: 600px;
+}
+
+.Factor__Box__Second {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  justify-content: center;
+  gap: 2em;
+}
+
+.Factor__Text {
+  text-align: center;
+}
+
+.Get__Started__Keyword {
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .Hero__Section,
+  .About__Container,
+  .Factor__Flex {
+    flex-direction: column;
+  }
+
+  .Service__Container p {
+    max-width: 100%;
+  }
+
+  .Service__Container button {
+    background-color: white !important;
+    color: black;
+  }
+
+  .Factor__Box__Second {
+    grid-template-columns: 1fr;
+  }
+}
